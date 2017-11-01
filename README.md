@@ -6,10 +6,12 @@ Developed by : Siri
 
 Version 1 : Bug Fixes
 
-NullPointerException : Description : When we are performing any operation on a NULL object, then JVM throws the NullPointerException. Problem 1: In the given program, the execution starts from the Foo class main method. At Line c.add(new OrderLine(new Item("book", (float) 12.49), 1)); in the given program throws a NullPointerException because we are trying to add an OrderLine object to a List collection object. Here, we have created the List reference rather than instantiating. Problem 2: 'this' keyword. It reference the current object. Here, while trying to assign a value for private variables at the time of instantiation of object without giving 'this' keyword gives a default value.
+NullPointerException : Description : When we are performing any operation on a NULL object, then JVM throws the NullPointerException. 
 
-clear( ) : This method is used to remove the objects present in the collections. In the given program, initially we are creating an OrderList object and trying to add it to List through Order object. Even after adding the Order objects in HashMap using key-value pair and performing clear operation on Order(List) object will remove the objects stored on HashMap as well.
+Problem 1: In the given program, the execution starts from the Foo class main method. At Line c.add(new OrderLine(new Item("book", (float) 12.49), 1)); in the given program throws a NullPointerException because we are trying to add an OrderLine object to a List collection object. Here, we have created the List reference rather than instantiating.
 
+Problem 2: 'this' keyword. It reference the current object. Here, while trying to assign a value for private variables at the time of instantiation of object without giving 'this' keyword gives a default value.
+ 
 Version 2 : Refactored version of Order Calculation designed with much cleaner code along with Junit test cases.
 
 Print statements - Used round function to get two digits after the decimal.
